@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
                 val frame = incoming.receive()
                 when (frame) {
                     is Frame.Text -> txtOutput.text=frame.readText()
-                    is Frame.Binary -> println(frame.readBytes())
+                    is Frame.Binary -> txtOutput.text=frame.readBytes().toString()
                 }
             }
         }
