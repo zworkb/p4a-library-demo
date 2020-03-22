@@ -1,6 +1,6 @@
 # P4A library demonstrator
 
-- This code demonstrates how to use a python service in a library(aar) being used by a kotlin app
+- This code demonstrates how [python-for-android](https://github.com/kivy/python-for-android) to use a python service in a library(aar) being used by a kotlin app
 - uses websockets to communicate between kotlin and python
 - please build the android library first since its output is used by the kivy part
 
