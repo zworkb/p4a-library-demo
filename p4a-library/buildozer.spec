@@ -78,8 +78,6 @@ android.sdk = 28
 # (bool) Use --private data storage (True) or --dir public storage (False)
 #android.private_storage = True
 
-android.add_src = java
-
 
 # (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
 # android.arch = armeabi-v7a
