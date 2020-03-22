@@ -10,8 +10,14 @@ This is a simple Activity that communicates via websockets with the Python backe
 - Kotlin 1.3.60
 - ktor websockets client
 
-### gradle script
+### project setup
 
+First compile the [p4a-library](../p4a_library/README.md),
+then you can open this directory in AndroidStudio and compile/run it. 
+
+the following steps have been done to the default project:
+
+#### build.gradle
 - add ktor version string
 - add repo maven { url 'https://kotlin.bintray.com/ktor' }
 - add ktor deps for core, websockets, cio
@@ -24,4 +30,7 @@ This is a simple Activity that communicates via websockets with the Python backe
         exclude 'META-INF/common.kotlin_module'
         exclude 'META-INF/*.kotlin_module'
     }
+
+#### AndroidManifest.xml
+
 - add INTERNET permission to the Manifest

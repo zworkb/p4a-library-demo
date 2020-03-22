@@ -6,5 +6,5 @@
 
 ## see subprojects for further information
 
-- [p4a-library](p4a-library/README.md)
-- [kotlin activity](activity-demo/README.md)
+- [p4a-library](p4a-library/README.md) contains the python echo service pagaged as an .aar
+- [kotlin activity](activity-demo/README.md) contains the AndroidStudio project that tests the echo service

@@ -8,7 +8,11 @@
 
 ## build
 
+
 ### buildozer.spec
+
+the following steps have been done to the `buildozer.spec` file:
+
 - set the correct `p4a` directory (depends on your p4a location):
 
     p4a.source_dir = /home/phil/p4a
