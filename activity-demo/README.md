@@ -12,7 +12,7 @@ This is a simple Activity that communicates via websockets with the Python backe
 
 ### project setup
 
-First compile the [p4a-library](../p4a_library/README.md),
+First compile the [p4a-library](../p4a_library),
 then you can open this directory in AndroidStudio and compile/run it. 
 
 the following steps have been done to the default project:
