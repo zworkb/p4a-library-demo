@@ -41,7 +41,7 @@ requirements = python3, websockets
 orientation = portrait
 
 # (list) List of service to declare
-services = websockets:service.py
+services = echo:service.py:foreground
 
 #
 # Android specific
@@ -89,7 +89,6 @@ android.arch = arm64-v8a
 
 # (str) python-for-android git clone directory (if empty, it will be automatically cloned from github)
 p4a.source_dir = ~/p4a
-#p4a.source_dir = ~/p4a_aar
 
 # (str) The directory in which python-for-android should look for your own build recipes (if any)
 #p4a.local_recipes =
@@ -98,7 +97,8 @@ p4a.source_dir = ~/p4a
 #p4a.hook =
 
 # (str) Bootstrap to use for android builds
-p4a.bootstrap = library
+p4a.bootstrap = service_library
+p4a.command = aar
 
 # (int) port number to specify an explicit --port= p4a argument (eg for bootstrap flask)
 #p4a.port =

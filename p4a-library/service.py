@@ -12,7 +12,7 @@ async def response(websocket, path):
 
 
 def start_server():
-    server = websockets.serve(response, '127.0.0.1', 8077)
+    server = websockets.serve(response, '127.0.0.1', 8081)
     asyncio.get_event_loop().run_until_complete(server)
     asyncio.get_event_loop().run_forever()
 

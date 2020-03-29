@@ -15,7 +15,7 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import kotlinx.android.synthetic.main.activity_main.*
-import org.kivy.kivynativeactivity.ServiceWebsockets
+import org.kivy.kivynativeactivity.ServiceEcho
 
 class MainActivity : AppCompatActivity() {
 
@@ -49,14 +49,14 @@ class MainActivity : AppCompatActivity() {
     fun onSend(v: View){
 
         GlobalScope.launch(Dispatchers.IO) {
-            testConnection("localhost", 8077, editMessage.text.toString())
+            testConnection("localhost", 8081, editMessage.text.toString())
         }
     }
 
     fun onStart(v: View) {
         val context = applicationContext
-        ServiceWebsockets.prepare(context)
-        ServiceWebsockets.start(context, "")
+        ServiceEcho.prepare(context)
+        ServiceEcho.start(context, "")
         btnSend.setEnabled(true)
     }
 }
